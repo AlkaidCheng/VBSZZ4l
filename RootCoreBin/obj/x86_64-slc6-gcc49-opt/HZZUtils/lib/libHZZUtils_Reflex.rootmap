@@ -1,0 +1,14 @@
+[ libHZZUtils_Reflex.so ]
+# List of selected classes
+class H4lBrRatio
+class HiggsCrossSection
+class IH4lBrRatio
+class IHiggsCrossSection
+header HZZUtils/H4lBrRatio.h
+header HZZUtils/HiggsCrossSection.h
+header HZZUtils/IH4lBrRatio.h
+header HZZUtils/IHiggsCrossSection.h
+# List of selected enums and outer classes
+enum CentreOfMass::is
+enum ColumnXS::col
+enum ColumnBR::col

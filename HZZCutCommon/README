@@ -1,0 +1,5 @@
+This package provides common tools for different HZZ cutflow codes. 
+The classes provided in this package are designed to serve as interface 
+classes with the concrete implementation provided by specific packages 
+derviving from this one. Please look the respective log file tod find
+information on how to the run the respective cutflow code

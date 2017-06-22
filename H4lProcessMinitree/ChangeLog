@@ -1,0 +1,230 @@
+2017-05-28  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* CMakeLists.txt: adding in first version
+
+2017-05-21  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* scripts/checkForCompleteness.py: changed to use data set name from meta data
+	* Root/ProcessMinitree.cxx (processSample): writing out meta data tree
+
+2017-05-20  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* scripts/checkForCompleteness.py (main): adding in script from Max to check final minitrees
+	as to whether events are missing. Cross-checks found minitrees with list of datasets in
+	UsedDataSets.py and checks expected event numbers in ami.
+
+2017-04-14  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx: H4lProcessMinitree-00-00-06
+
+2017-04-06  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (setBranchStatus): adding in some protection for missing
+	variables. (hasWeightCorr)
+
+2017-04-02  Antoine Laudrain  <antoine.laudrain@cern.ch>
+
+	* Root/ProcessMinitree.cxx: added safeguards for weights in data.
+
+2017-03-22  Antoine Laudrain  <antoine.laudrain@cern.ch>
+
+	* Root/ProcessMinitree.cxx: reading the w_sherpaLep branch if available for weights, else consider
+	it is 1.
+
+2017-03-20  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (checkVariables): removed changes for w_sherpaLep
+
+2017-03-17  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (calcWeight): forcing the correction for w_sherpaLep
+
+2017-03-17 Antoine Laudrain <antoine.laudrain@cern.ch>
+
+	* Root/H4lProcessMinitree.cxx: fixBR to 1 for MCFM offshell
+
+2017-03-10 Antoine Laudrain <antoine.laudrain@cern.ch>
+
+	* Root/H4lProcessMinitree.cxx (processSample): initialise BR tool with proper mass.
+	* Root/H4lProcessMinitree.cxx (processTTree): implements doMHShift: shift m4l variables, modify XS and BR.
+	* H4lProcessMinitree/H4lProcessMinitree.h: added doMHShift option
+	* util/combineMinitree.cxx: added doMHShift option.
+
+2017-02-25 Syed Haider Abidi <sabidi@cern.ch>
+	* moving to double variables
+
+2017-02-13  Antoine Laudrain  <antoine.laudrain@cern.ch>
+
+	* Root/H4lProcessMinitree.cxx (checkFor_ggF): do not consider 345060 as ggF.
+
+2017-01-24  Antoine Laudrain  <antoine.laudrain@cern.ch>
+
+	* H4lProcessMinitree/H4lProcessMinitree.h: added higgsBR tool, and variables to support BR
+	correction (noTau flag, 4e/4mu, 2e2mu).
+	* Root/H4lProcessMinitree.cxx (H4lProcessMinitree): reading truth_event_type branch for BR
+	correction.
+	* Root/H4lProcessMinitree.cxx (processSample): setting up the Higgs BR tool.
+	* Root/H4lProcessMinitree.cxx (processTTree, calcWeight): apply the BR correction if needed.
+	* util/combineMinitree.cxx: added doBRFix option.
+
+2017-01-16  Antoine Laudrain  <antoine.laudrain@cern.ch>
+
+	* H4lProcessMinitree/ProcessMinitree.h: added flag checking the presence of cand_index branch.
+	* Root/ProcessMinitree.cxx (processTTree): added check for duplicated events. Added flag
+	checking the presence of cand_index branch.
+
+2016-12-05  Antoine Laudrain  <antoine.laudrain@cern.ch>
+
+	* Root/ProcessMinitree.cxx (checkFor_ggF): fix isggF flag (was unset since we switched for
+	STXS, ie. Prod_v08).
+
+2016-11-22 Syed Haider Abidi <sabidi@cern.ch>
+	* removal of w_* (except for w_lumi) for systematic files
+
+2016-11-21  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (calcWeight): fix check for weight_jet, weight_btag for
+	RD/Antoine's minitrees
+
+2016-10-19 Syed haider Abidi <sabidi@cern.ch>
+	* clean up
+	* removing dependancy on CPAnalysisExamples to allow MCTruthClassifier to
+	compile
+
+2016-10-10  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging H4lProcessMinitree-00-00-03
+
+	* H4lProcessMinitree/ProcessMinitree.h (MiniTreeFileType): adding in post-processing for
+	isolation calculation
+	Added in use of enum for output minitree type.
+
+2016-10-05 Syed Haider abidi <sabidi@cern.ch>
+	* fixed polling logic for combineDataset.py
+	* and sorted the lists
+
+2016-09-21  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* scripts/getDataSets.py: small fixes to scripts
+
+2016-09-20 Syed Haider Abidi <sabidi@cern.ch>
+	* addition of the "fidandNom" for minitree type enum
+	* fix to generating the output name if the samplename is coming from
+	metaData tree
+	* saving of counting hist to output minitree
+
+2016-09-11 Syed Haider Abidi <sabidi@cern.ch>
+	* overwrote the polling logic after the main loop to allow for large
+	output log files
+
+2016-09-11  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* scripts/unTarDataSet.py (unTarFile): added back in the logic to add job number to the untarred files
+
+2016-09-07 Syed Haider Abidi <sabidi@cern.ch>
+	* output from process goes into a tmp log file
+	This is done since the output size was causing the code to stall..
+	* change to combineDataset unique ID code to allow for .root.X type file
+
+2016-09-02 Syed Haider Abidi <sabidi@cern.ch>
+	* dot back in combineDataSet.py
+
+2016-09-01 Syed Haider Abidi <sabidi@cern.ch>
+	* added parsing of metadata from MetaData tree
+	* old methods are still valid 
+
+2016-08-20  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* scripts/createFileList.py: added input arg
+	* scripts/unTarDataSet.py: fixes to include input args
+
+2016-08-19  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* scripts/getDataSets.py: adding new scripts to script directory - should eventually replace
+	the ones in python.
+
+2016-08-04  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging H4lProcessMinitree-00-00-02
+	* version used for ICHEP
+
+2016-08-02  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (cutEvent): added in resetting of GRLisOK if using an new GRL file
+
+2016-07-27  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (calcWeight): added in optional reweighting for TTVA SFs for Prod_v06
+
+2016-07-23  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (calcWeight): adding in Higgs pt reweigthing as an option for ggF
+
+2016-07-22 Syed Haider Abidi <sabidi@cern.ch>
+	* clean up of JVT weight
+
+2016-07-21  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (cutEvent): fix to reset m_hasTrigVar for each file
+
+2016-07-20  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (calcWeight): added in jvt SF weight
+
+2016-07-08  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (ProcessMinitree): commented out weight_novtx4lCut
+	(calcWeight): added in treatment for norm weights from RD
+
+2016-07-07 Syed Haider Abidi <sabidi@cern.ch>
+	* adding of counting hist to output
+	* change of how norm systematics are calculation
+	* removal of w_ZZovelap and using just weight_sampleOverlap from minitrees
+
+2016-06-30 Syed Haider Abidi <sabidi@cern.ch>
+	* clean up vertex cut - no more ignore option
+	for 20.1 minitrees, just set the option to not do vrtCut
+
+2016-06-26 Syed Haider Abidi <sabidi@cern.ch>
+	* vertex cut set to false as default - simpler minitree structure
+	* addition of long64 var
+	* bug fix for norm systematics
+
+2016-06-27  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* Root/ProcessMinitree.cxx (cutEvent): added in ignoreTrig and ignoreGRL
+
+2016-06-26  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* util/combineMinitree.cxx (main): set unblinded as default, and added doGRLpassThru to ignore GRL
+
+2016-06-22 Syed Haider Abidi <sabidi@cern.ch>
+	* Fix for norm systematics
+
+2016-06-22 Syed Haider Abidi <sabidi@cern.ch>
+	* Fix for GRL Cut
+
+2016-06-21  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (setBlindData): fix for unblinding option
+
+2016-06-20  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (cutEvent): fixed m4l flattening
+
+	* tagging H4lProcessMinitree-00-00-01
+	* util/combineMinitree.cxx (main): adding in blinding flag - default is to keep blinding
+
+2016-06-19  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* adding in BkgCR, BkgCRZpl directories, as well as option --ignoreVrtCut to work with 20.1 miniTrees
+
+2016-06-17  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (processTTree): adding in the
+	possibility of applying a x-sec fix for the Sherpa files
+	(matchPattern): added in check of map before checking the regexp
+	(setupOutput): fixed file name for bkgCRZpl
+
+2016-06-15  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/ProcessMinitree.cxx (ProcessMinitree): added in list of variables to read.
+	* H4lProcessMinitree/ProcessMinitree.h: adding in new version of package for processing miniTrees
+

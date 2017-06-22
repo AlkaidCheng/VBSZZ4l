@@ -1,0 +1,713 @@
+2017-06-16 Hannah Herde <hannah.herde@cern.ch>
+	* Multiplied DSID 343233 XS by 1.5 to account for all three neutrino
+	flavours
+
+2017-05-28  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* CMakeLists.txt: adding in first version:
+	**** NEED TO FIX atlas_add_executable( testHZZUtilsElectronClassifier ****
+	
+	* Root/BkgCrossSection.cxx (GetBkgCrossSection13TeV): fixed x-sec for 364251 - off by 10%.
+
+2017-05-16 Hannah Herde <hannah.herde@cern.ch>
+	* Updated DSID 361075 (Sherpa_CT10_ggllllNoHiggs) to match PMG
+
+2017-05-15 Hannah Herde <hannah.herde@cern.ch>
+	*   Added xsecggZH, xsecqqZH to CrossSection.h and Table_13Tev_Xsections.def
+
+2017-05-05  Hannah Herde <hannah.herde@cern.ch>
+	* Updated DSID 361073 to reflect PMG recommendation
+
+2017-05-01  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/BkgCrossSection.cxx (GetBkgCrossSection13TeV): added 345138,345141,345147,345156,345159
+	(GetBkgCrossSection13TeV): moved 345130-3 to fb
+
+2017-04-19 Syed Haider Abidi <sabidi@cern.ch>
+	* HWW samples XS
+
+2017-04-14  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* tagging HZZUtils-00-00-69
+
+2017-04-08 Syed Haider Abidi <sabidi@cern.ch>
+	* XS for tWH and tHjb ... might not be 100% correc
+
+2017-04-05  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/NLOreweighting.cxx (GetWeightHOQCDSherpa):
+	// For Sherpa 2.2.1, we have decided to NOT apply the HO QCD SF. Something should be done for
+	// the 0-jet emission at the BORN level, but it is not possibile to correctly identify this as
+	// all information about jets comes after the parton shower.  RDS 2017/04
+
+
+2017-04-05 Syed Haider Abidi <sabidi@cern.ch>
+	* Tagging HZZUtils-00-00-68
+
+2017-04-05 Will Buttinger <will@cern.ch>
+	* Fixing the package dependencies in the requirements file
+	* NOTE TO DEVELOPERS: PLEASE PLEASE PLEASE remember to test compilation in both CMT and RootCore. Not every user of this package uses rootcore!!
+
+
+2017-03-27 Hannah Herde <hannah.herde@cern.ch>
+	* Added DSIDs 345363, 345382, 345387, 345400
+
+2017-03-17 Antoine Laudrain <antoine.laudrain@cern.ch>
+	* Root/BkgCrossSection.cxx: added 345130, 345131, 345132.
+
+2017-02-25 Syed Haider Abidi <sabidi@cern.ch>
+  * move to doule for NLO weight
+  * KD2Mela code
+
+2017-02-23 Hannah Herde <hannah.herde@cern.ch>
+	* EFT sample xs and filter efficiencies added for DSIDs 345049-52
+	* Dark matter signal samples added with DSIDs 303512-30, 303551, 303552,
+	305710-24, 306081-112
+
+2017-02-10 Syed Haider Abidi <sabidi@cern.ch>
+	* EW Correction for new sherpa samples
+
+2017-02-18 Syed Haider Abidi <sabidi@cern.ch>
+	* update to sherpa filter
+	* adding helper code for configuring bTagging information
+
+2017-02-15 Syed Haider Abidi <sabidi@cern.ch>
+	* Theory variation tool - function that outputs a nicer name
+
+2017-02-14 Syed Haider Abidi <sabidi@cern.ch>
+	* add overlap for Sherpa ZZ llll
+
+2017-02-12 Antoine Laudrain <antoine.laudrain@cern.ch>
+	* Root/OverlapRemoval.cxx: added null pointer protection.
+
+2017-02-08 Syed Haider Abidi <sabidi@cern.ch>
+	* WpH WmH and sherpa filter ZZ XS
+
+2017-02-02 Hannah Herde <hannah.herde@cern.ch>
+	* Set k_madGraphVBF = 1
+
+2017-01-31 Hannah Herde <hannah.herde@cern.ch>
+	* Removed k_madGraphVBF from DSIDs 343247, 343249, 343252-343255, 343259-343261 
+
+2017-01-22 Syed haider Abidi <sabidi@cern.ch>
+	* high mass SBI samples
+
+2017-01-18 Hannah Herde <hannah.herde@cern.ch>
+	* added the ZZd samples (DSIDs 343234 - 343242)
+	* added 4l graviton samples (DSIDs 303327-303334, 344783-344787)
+  	* added VBF sample (DSID 344235)
+	* added axial mono-Z samples (DSIDs 307190-307249)
+	* added gg2VV llvv SBI samples (DSIDs: 344783-87)
+
+2017-01-03 Syed Haider Abidi <sabidi@cern.cn>
+	* adding of bbH XS - just the XS no BR in the numbers
+
+2016-12-13 Hannah Herde <hannah.herde@cern.ch>
+	* added MCFM ggZZ->ZZ/H->ZZ/SBI samples for offshell/m4l analyses (DSIDs
+	344229-34, 344821-35)
+	* Sherpa kFactor of 1.7 applied to DSID 361074 
+
+2016-12-01  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* HZZUtils/ElectronMCClassification.h (AsgTool): changed m_mcClassifierTool to be mutable to
+	allow to use in const method - seems like compiler errors got more strict.
+
+2016-11-26 Syed Haider Abidi <sabidi@cern.ch>
+	* units fix for ttZ samples
+
+2016-11-20 Syed Haider Abidi <sabidi@cern.ch> 
+	* update XS for 364108
+	* update XS for 361072
+
+2016-11-15 Hannah Herde <hannah.herde@cern.ch>
+	* Minor repairs
+
+2016-11-14 Hannah Herde <hannah.herde@cern.ch>
+	* Updated the ttZ samples to match PMG twiki (DSIDs 410069/70, 410218/9)
+	* Removed the k_madGraphVBF k-factor from the EFT VBF samples (DSIDs
+	344152-7)
+
+2016-11-04 Hannah Herde <hannah.herde@cern.ch>
+	* Applied the Sherpa 2.2 (k_Zll_Sherpa22, k_Znunu_Sherpa22) kFactors to the Sherpa 2.2.1 samples
+	* Corrected filter efficiency for DSID 364147 based on TWiki page 
+	* Applied the k_madGraphVBF kFactor to the EFT samples DSIDs 344152-7
+	* Added Htop samples with DSIDs 410049, 410142, 410144 (not in AMI; pulled
+	from twiki), 410155, 410218-9. kFactors applied to 410142, 410144, and
+	410155 
+	* Updated BkgXS based on Artem's list to synchronize with the PMG
+	recommendations (mostly missing kFactors)
+
+2016-10-20 Syed Haider Abidi <sabidi@cern.ch>
+	* support for sherpa 2.2.1 in overlap removal tool
+	* removing warning for el MC classification
+
+2016-10-11  Hannah Herde <hannah.herde@cern.ch>
+	* added (XS*filter efficiency) for DSIDs 344152-7, 363490-4, 364100-55
+	* no generator efficiency in AMI for DSID #364133
+
+2016-10-10  Hannah Herde  <hannah.herde@cern.ch>
+  * added (XS*filter eff) for the ZGamma samples - DSIDs 301535-6, 301899-904
+
+2016-10-06  Ioannis Nomidis  <ioannis.nomidis@cern.ch>
+  * tagging as HZZUtils-00-00-57
+	* Root/ElectronMCClassification.cxx: hack for fake electron classification in Sherpa 2.2
+
+2016-09-17  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-56
+	* lumi = 24799.9 pb-1
+	* added data16_13TeV.periodAllYear_DetStatus-v82-pro20-13_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml
+	* added ilumicalc_histograms_None_297730-308084.root
+
+2016-09-15  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-55
+	* final ICHEP GRL, lumi = 18857.4 pb-1
+	* added data16_13TeV.periodAllYear_DetStatus-v82-pro20-12_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml
+	* added ilumicalc_histograms_None_297730-306451.root
+
+2016-07-26 Eleni Mountricha <emountri@cern.ch>
+	* added MG k-factor k_ZllHT_MG = 1.14 for MG HT samples
+	363123-363146
+	* added filter eff for gg2VV llvv 343233 -> 0.66248
+
+2016-07-25  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-54
+	* final ICHEP GRL, lumi = 11571.5 pb-1
+	* added data16_13TeV.periodAllYear_DetStatus-v81-pro20-09_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+	* added ilumicalc_histograms_None_297730-303892.root
+
+2016-07-25 Eleni Mountricha <emountri@cern.ch>
+	* corrected Sherpa ZZ 361063 according to PMG twiki: 12583->12849
+
+2016-07-24  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/BkgCrossSection.cxx (GetBkgCrossSection13TeV): added in k-factor for 361073
+
+2016-07-21  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-53
+	* total 2015 lumi  3212.96 pb-1
+	* calculation of lumi using new lumi tag
+	* adding ilumicalc_histograms_None_276262-284484_final_20.7.root
+
+2016-07-20  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-52
+	* total lumi 10064.3 pb-1
+	* calculation of lumi using new lumi tag which includes preliminary calibration factors for the 2016 vdM scan, as well as a mu-dependent ‘calibration transfer’ correction
+	* overall 5% decrease in lumi
+	* adding ilumicalc_histograms_None_297730-303560.root
+
+2016-07-19 Hannah Herde <hannah.herde@cern.ch>
+	* applied k-Factor to DSIDs 344295-344298
+
+2016-07-19  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-51
+	* total lumi 10589.2 pb-1
+	* adding DS2 GRL, data16_13TeV.periodAllYear_DetStatus-v80-pro20-08_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+	* adding ilumicalc_histograms_None_297730-303560.root
+
+2016-07-17  Hannah Herde <hannah.herde@cern.ch>
+	* Adding XS and filter efficiency for DSID's 344295-8 from AMI
+
+2016-07-14  Hannah Herde <hannah.herde@cern.ch>
+	* Adding XS for the FxFx ggF samples (DSID 344158-344170)
+	* Adding XS for the Ztautau sample (DSID 363122) Note that there is no
+	filter efficiency available in AMI. Set according to the twiki -
+	twiki.cern.ch/twiki/bin/view/AtlasProtected/MC15ZjetsSherpa22BSamplesPMG#Sherpa_22_NNPDF30NNLO_Ztauta_AN6
+
+2016-07-14  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-50
+	* total lumi 8585.76 pb-1
+	* adding updated (4) DS1 GRL, data16_13TeV.periodAllYear_DetStatus-v80-pro20-07_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+	* adding ilumicalc_histograms_None_297730-303304.root
+
+2016-07-10 Eleni Mountricha <emountri@cern.ch>
+	*  added k_ZZ_sherpa to the qqZZ sample 361090
+
+2016-07-11 Hannah Herde <hannah.herde@cern.ch>
+	* added NLO kFactor for DSIDs 343212 and 343213
+
+2016-07-10 Eleni Mountricha <emountri@cern.ch>
+	* fix ttbar OR - remove 410009 from the testing part
+
+2016-07-07  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-49
+	* total lumi 6302.24 pb-1
+	* adding updated (3) DS1 GRL, data16_13TeV.periodAllYear_DetStatus-v79-pro20-06_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+	* adding ilumicalc_histograms_None_297730-302956.root
+
+2016-07-07 Hannah Herde <hannah.herde@cern.ch>
+	* Updating XS and BR for signal to match latest YR4 results
+	* tagging HZZUtils-00-00-48
+
+2016-06-29 Eleni Mountricha <emountri@cern.ch>
+	* adding xsection for 341561 ZHinv
+
+2016-07-01  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-47
+	* total lumi 5118.35 pb-1
+	* adding updated DS1 GRL, data16_13TeV.periodAllYear_DetStatus-v79-pro20-06_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+	* adding ilumicalc_histograms_None_297730-302391.root
+
+2016-06-30 Hannah Herde <hannah.herde@cern.ch>
+  * ttbar (DSID 344171) afterburn efficiency updated
+	* added kFactor for ZZ Sherpa sample (DSID 361063)
+	* tagging HZZUtils-00-00-46
+
+2016-06-29 Eleni Mountricha <emountri@cern.ch>
+	* added ttbar OR for 4l and llvv; to be applied on 410000 and 410009
+	for 4l and 410000 for llvv
+
+2016-06-27 Hannah Herde <hherde@cern.ch>
+ * Correction for filter efficiency for 4l-filtered ttbar sample (DSID
+ 344171). Correct efficiency is (generated efficiecy)*(afterburn efficiency)
+
+2016-06-23 Hannah Herde <hherde@cern.ch>
+ * added XS*filter efficiency for DSIDs 361090, 344171, 363123-363146
+ * verified XsecSummaryDibosonPowheg samples against their  Twiki page.
+ Updated to Twiki/AMI value where appropriate
+
+2016-06-22  Mariyan Petrov  <mpetrov@cern.ch>
+  * tagging as HZZUtils-00-00-45
+	* total lumi 3193.68 pb-1
+	* added GRL	data15_13TeV.periodAllYear_DetStatus-v79-repro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+	* added ilumicalc_histograms_None_276262-284484_final_20.7.root
+
+2016-06-21 Hannah Herde <hherde@cern.ch>
+ * added XS for vhlep125 (DSIDs 344135-151; no 344136). Important -- these XS
+ are not available in AMI or Twikis. Retrieved by hand from PANDA logs.
+ Supplied XS is the average of the 'MetaData cross-section (nb)' reported in
+ each log.generate for each job submitted to create the dataset. Please email
+ me if you have questions
+ * tagging HZZUtils-00-00-44
+
+2016-06-20 Hannah Herde <hherde@cern.ch>
+	* added XS and filter efficiency for DSIDs 305612, 305613, 305614, 344173 using AMI
+	* added XS and filter efficiency for DSIDs 344172, 344174, 344175, 344176,
+	361075, 361076 using TWikis entries
+
+2016-06-17 Haider Abidi <sabidi@cern.ch>
+	* added Sherpa V2.2 samples DSIDs in the overlap tool
+	* tagging HZZUtils-00-00-42
+
+2016-06-14 Hannah Herde <hherde@cern.ch>
+
+	* tagging HZZUtils-00-00-42
+	* Updated the XS for DSID  341975, Pythia8EvtGen_A14NNPDF23LO_ZllH125_ZZ4l,
+	using LHCHXS values
+	* Added XS*(filter eff) and the kFactors for XsecSummaryZjetsSherpa22 Light, c, and b. Used
+	AMIXsec converted to fb. XS does not appear to be in AMI yet - copied from
+	Twiki pages.
+
+2016-06-10  Mariyan Petrov  <mpetrov@cern.ch>
+
+	* tagging HZZUtils-00-00-41
+	* total lumi 2613.83 pb-1
+	* added GRL data16_13TeV.periodAllYear_DetStatus-v78-pro20-04_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+	* added lumicalc file ilumicalc_histograms_None_297730-300908.root
+
+2016-06-08 Syed Haider Abidi <sabidi@cern.ch>
+	* setting XS to 1 for mH > 200
+	* setting BR for > 130 to value at 130
+	* tagging HZZUtils-00-00-40
+
+2016-06-04  Mariyan Petrov  <mpetrov@cern.ch>
+
+	* tagging HZZUtils-00-00-39
+	* total lumi 568.467 pb-1
+	* added GRL data16_13TeV.periodAllYear_DetStatus-v77-pro20-03_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+	* added lumicalc ilumicalc_histograms_None_297730-300279.root
+
+2016-06-02  Hannah Herde <hherde@cern.ch>
+
+	* tagging HZZUtils-00-00-38
+	* Updated Table_13Tev_Xsections.def with Yellow Report 4 (YR4) values
+	*   YR4 update only applied for 13 TeV
+	*   YR4 13 TeV bbH - scale sys values are actually a sum of
+	QCD scale + PDF_{alpha_s}. PDF_{alpha_s} values recorded as 0
+	*   Commented out the code used to scale 8 TeV (from YR3) to 13 TeV
+	* Updated Table_H4l_BrRatio.def with YR4
+	*	  Previous branching ratios from mH=80->1000 GeV
+	*   YR4 only defined between mH=120-130 GeV
+
+2016-06-02  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging HZZUtils-00-00-37
+	* python/compareH4lMinitrees.py (compareFile): added fixes
+
+2016-06-01  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging HZZUtils-00-00-36
+	* removed some old ilumicalc files and old GRL
+	* Mariyan added: ilumicalc_histograms_None_297730-299243.root, and
+	data16_13TeV.periodAllYear_DetStatus-v76-pro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml
+
+2016-05-30  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* removing duplicate 2015 likelihood file: mc15_20150712/ElectronLikelihoodLooseOfflineConfig2015_CutBL.conf
+
+2016-05-27  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* data/ElectronPhotonSelectorTools/offline/mc15_20160512/ElectronLikelihoodVeryLooseOfflineConfig2016_CutBL_Smooth.conf (CutBL): adding VL with 2 pixHits and BL cut.
+
+2016-05-26  Mariyan Petrov  <mpetrov@cern.ch>
+
+	* Adding back old lumicalc file and renaming the final one
+	* data/Pileup/mc15/ilumicalc_histograms_None_276262-284484_final.root
+	* data/Pileup/mc15/ilumicalc_histograms_None_276262-284484.root
+
+2016-05-24  Mariyan Petrov  <mpetrov@cern.ch>
+
+	* adding 2016 lumicalc file, offline initial luminosity tag for 2016, luminosity = 178.816 pb-1
+	* data/Pileup/mc15/ilumicalc_histograms_None_297730-299055.root
+
+2016-05-24  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* data/GRL/mc15/data16_13TeV.periodAllYear_DetStatus-v76-pro20-01_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml: adding in new grl for data 16
+
+2016-05-19  Mariyan Petrov  <mpetrov@cern.ch>
+
+	* adding latest luminosity tag lumicalc file, luminosity = 3193.68 pb-1
+
+2016-05-17  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* removing old unused ilumicalc files
+
+2016-05-15  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging HZZUtils-00-00-35
+	* data/ElectronPhotonSelectorTools/offline/mc15_20151012/ElectronLikelihoodVeryLooseOfflineConfig2015_CutBL.conf (doPileupTransform): require 2 pix hits for very loose
+
+2016-05-11  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* data/GRL/mc15/data15_13TeV.periodAllYear_DetStatus-v75-repro20-01_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml: added new grl
+
+2016-04-11  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging HZZUtils-00-00-34
+
+2016-03-27  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* python/compareH4lMinitrees.py: adding in use of cand_index for multiQuads
+
+2016-03-21  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* python/compareH4lMinitrees.py: adding in compareH4lMinitrees.py
+
+2015-03-02 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* correct ttbar 410009 to include k-factor, format 410002/4
+
+2015-02-12 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* correct ttbar 410001 and add separately the k-factor component
+	(total xsec*eff*k-factor is exactly the same) for 410000
+
+2016-02-09 Syed Haider Abidi <sabidi@cern.ch>
+	* Root/NLOreweighting.cxx (QCD weights): fix to the ensure that if
+	statements are not always true
+2016-02-04  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* data/ElectronPhotonSelectorTools/offline/mc15_20151012/ElectronLikelihoodVeryLooseOfflineConfig2015_CutBL.conf
+	(DiscLooseForPileupTransform): adding in VeryLoose config file with BL
+	cut.
+
+2015-11-25  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/NLOreweighting.cxx (GetWeightHOEW): fix from Jochen for weight_qcd_syst up/down
+
+2015-11-23 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* add pilup profile for latest GRL [3.31668/fb]
+	* tagging HZZUtils-00-00-33
+
+2015-11-22 Haider Abidi <sabidi@cern.ch>
+	* add pilup profile mc15b
+	* tagging HZZUtils-00-00-32
+
+2015-11-21  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* data/GRL/mc15/data15_13TeV.periodAllYear_DetStatus-v73-pro19-08_DQDefects-00-01-02_PHYS_StandardGRL_All_Good_25ns.xml: adding new grl. [3.31668/fb]
+	* tagging HZZUtils-00-00-31
+
+2015-11-20 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* update all Zjets to XSections_13TeV_e3651_e3741.txt for mc15b
+
+2015-11-18 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* add ttV/VVV [361621, 361623, 361625, 361626, 410069, 410070]
+	* adjust Zjets xsec*filterEff according to yesterday's mail in pmg
+	* tagging HZZUtils-00-00-30
+
+2015-11-17 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* add ggZZ bkg-only [343212, 343213, 343233]
+	* tagging HZZUtils-00-00-29
+
+2015-11-11 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* tot year 2015; 3.34258/fb
+	* tagging HZZUtils-00-00-27
+	* addig back in the ZZ high mass and tagging again to
+	HZZUtils-00-00-28
+
+2015-11-04 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* will's fix for requirements
+
+2015-10-29 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+	* GRL and pileup profile for 276262-282712; 2. fb^-1
+	* xsec scaling for low mass, 1 for high mass
+	* tagging HZZUtils-00-00-26
+
+2015-10-27 Syed Haider Abidi <sabidi@cern.ch>
+	* adding the NLO KFactor tool
+
+2015-10-22 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * GRL and pileup profile for 276262-281385; 1.7 fb^-1
+	* tagging HZZUtils-00-00-25
+
+2015-10-18 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * not apply Zjets OR in the case of ZZ
+	* GRL and pileup profile for 276262-281075; 1.4 fb^-1
+	* tagging HZZUtils-00-00-24
+
+2015-10-10  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging HZZUtils-00-00-23
+
+2015-10-09 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * added 361603 Powheg2 inclusive sample for the Overlap removal
+	* added xsec for ZZ [100-150] 342556
+
+2015-10-09  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging HZZUtils-00-00-22
+	* added ilumicalc_histograms_None_276262-280614.root
+	* data/GRL/mc15/data15_13TeV.periodAllYear_DetStatus-v67-pro19-02_DQDefects-00-01-02_PHYS_StandardGRL_All_Good.xml: adding in new GRL
+
+2015-09-28 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * update data profile and GRL up to mid D4;322.399/pb
+	* tagging HZZUtils-00-00-21
+
+2015-09-28 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * added powheg DY 301000-301178; added powhegv2 VV 361600-361611
+
+2015-09-23 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+	* xsec for ZZincl Powheg2 [361603] SherpaggZZ m4l100 [361074],
+	Zee_4lMassFilter [341103]
+
+2015-09-12  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging HZZUtils-00-00-19
+	* data/ElectronPhotonSelectorTools/offline/mc15_20150712/ElectronLikelihoodLooseOfflineConfig2015_CutBL.conf:
+	temporarily adding likelihood config with BL cut.
+
+2015-09-10 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+	* MadGraph Z+jet xsec [361500-361519]
+
+2015-08-31 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+	* GRL and PU reweighting file for period D [only period D!]
+
+2015-08-26  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/OverlapRemoval.cxx (killEvent): added some logic to return immediately if no check is
+	needed for this run
+
+2015-08-21 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * activated ZZlowMass OR and flags to activate low/high mass OR on/off
+	independently: bool killEvent(unsigned int runNumber, const
+	xAOD::TruthParticleContainer * truthParticles, bool doZZHighMass, bool
+	doZZLowMass)
+	* added 3-lep filtered Z-jets OR
+	* added correction barcode<200000 for GEANT secondary particles
+	* float -> double
+
+2015-08-12 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * NNLO k-factors for V+jets added
+
+2015-08-06 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * ttbar xsection correction and athena-based version fixes
+
+2015-08-04 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * addition of missing W/Z+jets samples
+
+2015-07-22 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+        * add 187178
+
+2015-07-17 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+	* addition of newer GRL, lumicacl period C5
+
+2015-07-17 Syed Haider Abidi <sabidi@cern.ch>
+
+	* addition of newer GRL, lumicacl
+
+2015-07-17 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+	* correct some xsections for 13 TeV - 187154 187155
+
+
+2015-07-13 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+	* correct some xsections for 13 TeV
+
+2015-07-13 Syed Haider Abidi <sabidi@cern.ch>
+
+	* addition of newer GRL, lumicacl
+
+2015-07-13 Eleni Mountricha <Eleni.Mountricha@cern.ch>
+
+	* add xsections for 13 TeV
+
+2015-07-02 Syed Haider Abidi <sabidi@cern.ch>
+
+	* addition of GRL, lumicacl and pileup files
+
+2015-06-10  Rhys Owen  <rhys.owen@cern.ch>
+
+	* Update for helper functions moved to xAODTruth
+	*	Remove ifdef statements for MCTruthClasifier as it is now included in
+	the release
+	*	M       Root/ElectronMCClassification.cxx
+	*	M       HZZUtils/ElectronMCClassification.h
+
+2015-05-28  Syed Haider Abidi  <sabidi@cern.ch>
+
+	* Root/BkgCrossSection.cxx (GetBkgCrossSection14TeV): adding the XS for high mass ZZ sample
+
+2015-05-28  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/BkgCrossSection.cxx (GetBkgCrossSection14TeV): remove some warnings
+
+2015-04-30  Rhys Owen  <Rhys.Owen@cern.ch>
+
+	* Updated the ElectronMCClassification to take advantage of the
+	AnalysisBase version of the MCTruthClassifier.
+	* Also added a small test program which demonstrates the usage of the
+	classifiers and includes some instructions on how to set up with the
+	MCTruthClassifier.
+	*	M       Root/ElectronMCClassification.cxx
+	*	M       cmt/Makefile.RootCore
+	*	M       HZZUtils/ElectronMCClassification.h
+	*	M       HZZUtils/IElectronMCClassification.h
+	*	A       util/testHZZUtilsElectronClassifier.cxx
+
+2015-04-27  Rhys Owen  <Rhys.Owen@cern.ch>
+
+	* Update debug statements to use ATH_MSG and remove unicode characters
+	* Add return status codes when truth information can't be found
+	*	M       Root/ElectronMCClassification.cxx
+	*	M       HZZUtils/ElectronMCClassification.h
+	*	M       HZZUtils/IElectronMCClassification.h
+
+2015-04-24  Rhys Owen  <Rhys.Owen@cern.ch>
+
+	* Add first pass of ElectronMCClassification tool
+	* A         Root/ElectronMCClassification.cxx
+	* A         HZZUtils/H4lMCTruthClassifierDefs.h
+	* A         HZZUtils/ElectronMCClassification.h
+	* A         HZZUtils/IElectronMCClassification.h
+
+2015-04-20  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging HZZUtils-00-00-05
+	* adding in HelicityAngles class
+	* HZZUtils/HiggsCrossSection.h (AsgTool): fixed inheritance for interface
+	* HZZUtils/H4lBrRatio.h (AsgTool): same here
+
+2015-04-10 Ludovica Aperio Bella <ludovica@cern.ch>
+	* Add Sherpa Zjet Xsection
+	* M  Root/BkgCrossSection.cxx
+
+2015-04-07 Rhys Owen <Rhys.Owen@cern.ch>
+
+	* Fix scope of internal function
+	* M       ElectronRecoClassification.h
+
+2015-04-01 Rhys Owen <Rhys.Owen@cern.ch>
+
+	* Re-implement ElectronRecoClassifier as an ASG tool
+	* A       Root/ElectronRecoClassification.cxx
+	* M       cmt/Makefile.RootCore
+	* A       HZZUtils/IElectronRecoClassification.h
+	* A       HZZUtils/ElectronRecoClassification.h
+
+2015-03-10 Christos Anastopoulos <Christos.Anastopoulos@cern.ch>
+
+	* Add missing includes
+	* Tagging HZZUtils-00-00-04
+
+
+2015-03-10 Christos Anastopoulos <Christos.Anastopoulos@cern.ch>
+
+	* Small fixes
+	* M       Root/H4lBrRatio.cxx
+	* M       cmt/requirements
+	* Tagging HZZUtils-00-00-03
+
+2015-03-09 Kerry Parker <kparker@cern.ch>
+
+	* Re-implement H4l Branching Ratio as an Asg tool
+	* A       Root/H4lBrRatio.cxx
+	* A       Root/Table_H4l_BrRatio.def
+	* A       HZZUtils/H4lBrRatio.h
+	* M       HZZUtils/selection.xml
+	* M       HZZUtils/HZZUtilsDict.h
+	* A       HZZUtils/BrRatio.h
+	* A       HZZUtils/IH4lBrRatio.h
+	* M       util/testHZZUtils.cxx
+
+2015-03-08 Christos Anastopoulos <Christos.Anastopoulos@cern.ch>
+
+	* Working  on the msg of the testHZZUtils
+	* M       Root/HiggsCrossSection.cxx
+	* M       HZZUtils/CrossSection.h
+	* D       util/TestHZZUtils.cxx
+	* A  +    util/testHZZUtils.cxx
+	* Tagging HZZUtils-00-00-02
+
+2015-03-07 Christos Anastopoulos <Christos.Anastopoulos@cern.ch>
+
+	* Add enums to dictionaries
+	* M       Root/HiggsCrossSection.cxx
+	* M       HZZUtils/IHiggsCrossSection.h
+	* M       HZZUtils/CrossSection.h
+	* M       HZZUtils/selection.xml
+	* M       HZZUtils/HZZUtilsDict.h
+	* M       HZZUtils/HiggsCrossSection.h
+	* M       util/TestHZZUtils.cxx
+
+2015-03-06 Christos Anastopoulos <Christos.Anastopoulos@cern.ch>
+
+	* Fix Athena compilation
+	* Organise the test a bit better
+	* M       cmt/requirements
+	* D       test.py
+	* M       ChangeLog
+	* D       util/testHiggsCrossSection.cxx
+	* A  +    util/TestHZZUtils.cxx
+	* Tagging HZZUtils-00-00-01
+
+2015-03-06 Christos Anastopoulos <Christos.Anastopoulos@cern.ch> ,  Kerry Parker <kparker@cern.ch>
+
+	* Re-implement Higgs Cross Section as an Asg tool
+	* M       Root/HiggsCrossSection.cxx
+	* A       Root/Table_13Tev_Xsections.def
+	* A       Root/Table_14Tev_Xsections.def
+	* A       Root/Table_7Tev_Xsections.def
+	* A       Root/Table_13_5Tev_Xsections.def
+	* A       Root/Table_8Tev_Xsections.def
+	* M       cmt/requirements
+	* M       cmt/Makefile.RootCore
+	* A       HZZUtils/IHiggsCrossSection.h
+	* D       HZZUtils/HiggsZZ4lUtilsDict.h
+	* M       HZZUtils/CrossSection.h
+	* M       HZZUtils/selection.xml
+	* M       HZZUtils/HiggsCrossSection.h
+	* A       HZZUtils/HZZUtilsDict.h
+	* A       util
+	* A       util/testHiggsCrossSection.cxx

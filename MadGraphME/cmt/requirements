@@ -1,0 +1,17 @@
+package MadGraphME
+
+author Karolos Potamianos <karolos.potamianos@cern.ch>
+
+use AtlasPolicy          AtlasPolicy-*    
+use AtlasROOT            AtlasROOT-*              External
+
+apply_pattern installed_library
+              library MadGraphME "../Root/*.cxx "
+
+
+## install the xml files (in the weights directory)
+apply_pattern generic_declare_for_link kind=xmls files="../Cards" prefix=XML/$(package)
+
+private
+
+macro_append cppflags " -Wno-unused-variable -I../MadGraphME -DMG_PRINT_PARS=0"

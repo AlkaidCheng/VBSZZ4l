@@ -1,0 +1,73 @@
+RC_CXX       = g++
+RC_LD        = g++
+RC_CXXFLAGS  = -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree -O2 -Wall -fPIC -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-x86_64-slc6-gcc49-opt/include -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/include -g -Wno-tautological-undefined-compare -DROOTCORE -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-x86_64-slc6-gcc49-opt/include -pipe -W -Wall -Wno-deprecated -pedantic -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-long-long -Wdeprecated-declarations -DROOTCORE_RELEASE_SERIES=24 -DROOTCORE_TEST_FILE=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_s2608_s2183_r7725_r7676/AOD.07915862._000100.pool.root.1\" -DROOTCORE_TEST_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725\" -DASG_TEST_FILE_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7562/data15_13TeV.00284154.physics_Main.merge.AOD.r7562_p2521/AOD.07687819._000382.pool.root.1\" -DASG_TEST_FILE_MC=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_s2608_s2183_r7725_r7676/AOD.07915862._000100.pool.root.1\" -DASG_TEST_FILE_MCAFII=\"\" -DXAOD_STANDALONE -DXAOD_ANALYSIS -DASGTOOL_STANDALONE -fPIC -g -DROOTCORE_PACKAGE=\"H4lProcessMinitree\" -g
+RC_DICTFLAGS = -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree -O2 -Wall -fPIC -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-x86_64-slc6-gcc49-opt/include -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/include -g -Wno-tautological-undefined-compare -DROOTCORE -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-x86_64-slc6-gcc49-opt/include -pipe -W -Wall -Wno-deprecated -pedantic -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-long-long -Wdeprecated-declarations -DROOTCORE_RELEASE_SERIES=24 -DROOTCORE_TEST_FILE=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_s2608_s2183_r7725_r7676/AOD.07915862._000100.pool.root.1\" -DROOTCORE_TEST_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725\" -DASG_TEST_FILE_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7562/data15_13TeV.00284154.physics_Main.merge.AOD.r7562_p2521/AOD.07687819._000382.pool.root.1\" -DASG_TEST_FILE_MC=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_s2608_s2183_r7725_r7676/AOD.07915862._000100.pool.root.1\" -DASG_TEST_FILE_MCAFII=\"\" -DXAOD_STANDALONE -DXAOD_ANALYSIS -DASGTOOL_STANDALONE -fPIC -g -DROOTCORE_PACKAGE=\"H4lProcessMinitree\" -g
+RC_INCFLAGS  = -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-x86_64-slc6-gcc49-opt/include -I/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/include -DROOTCORE -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-x86_64-slc6-gcc49-opt/include -DROOTCORE_RELEASE_SERIES=24 -DROOTCORE_TEST_FILE=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_s2608_s2183_r7725_r7676/AOD.07915862._000100.pool.root.1\" -DROOTCORE_TEST_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725\" -DASG_TEST_FILE_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7562/data15_13TeV.00284154.physics_Main.merge.AOD.r7562_p2521/AOD.07687819._000382.pool.root.1\" -DASG_TEST_FILE_MC=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_s2608_s2183_r7725_r7676/AOD.07915862._000100.pool.root.1\" -DASG_TEST_FILE_MCAFII=\"\" -DXAOD_STANDALONE -DXAOD_ANALYSIS -DASGTOOL_STANDALONE -DROOTCORE_PACKAGE=\"H4lProcessMinitree\"
+RC_LIBFLAGS  = -shared -m64 -L/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-x86_64-slc6-gcc49-opt/lib -lCore -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -g
+RC_BINFLAGS  = -L/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/lib -L/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/lib/x86_64-slc6-gcc49-opt -lH4lProcessMinitree -lMCFM_MatrixElement -lHist -L/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/../MCFM_MatrixElement/data -lmcfm_8p0 -lov_8p0 -lpv_8p0 -lrecur_8p0 -lgfortran -lGoodRunsLists -lXMLIO -lXMLParser -lTreePlayer -lTree -lxml2 -lHist -lHZZUtils -lMathMore -lMCTruthClassifier -lxAODMuon -lMuonIdHelpers -lFourMomUtils -lxAODMissingET -lboost_unit_test_framework -lxAODJet -lGenVector -lxAODPFlow -lGenVector -lxAODBTagging -lxAODTrigger -lxAODEventInfo -lPATInterfaces -lRootCoreUtils -lboost_regex -lTree -lHist -lPathResolver -lboost_filesystem -lHist -lxAODEgamma -lxAODPrimitives -lxAODTruth -lTruthUtils -lxAODCaloEvent -lCaloGeoHelpers -lxAODTracking -lxAODBase -lPhysics -lAsgTools -lxAODRootAccess -lNet -lTree -lxAODEventFormat -lxAODCore -lRIO -lAthContainers -lAthLinks -lCxxUtils -lboost_regex -lboost_system -lxAODRootAccessInterfaces -lAsg_GoogleTest -m64 -L/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-x86_64-slc6-gcc49-opt/lib -lCore -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic
+
+
+all_H4lProcessMinitree : dep_H4lProcessMinitree package_H4lProcessMinitree
+
+package_H4lProcessMinitree :  /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/lib/libH4lProcessMinitree.so /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/bin/combineMinitree postcompile_H4lProcessMinitree
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/lib/libH4lProcessMinitree.so :  /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/ProcessMinitree.o /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.o | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/lib
+	$(SILENT)echo Linking `basename $@`
+	$(SILENT)$(RC_LD) /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/ProcessMinitree.o /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.o $(RC_LIBFLAGS) -L/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/lib/x86_64-slc6-gcc49-opt -o $@
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/%.o : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root/%.cxx | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/ProcessMinitree.d
+	$(SILENT)echo Compiling `basename $@`
+	$(SILENT)rc --internal check_dep_cc H4lProcessMinitree $@
+	$(SILENT)$(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/%.d : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root/%.cxx | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj
+	$(SILENT)echo Making dependency for `basename $<`
+	$(SILENT)rc --internal make_dep $(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES)  -- $@ $< 
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj : 
+	$(SILENT)echo Making directory $@
+	$(SILENT)mkdir -p $@
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.o : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root/LinkDef.h /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.headers | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.d
+	$(SILENT)echo Compiling `basename $@`
+	$(SILENT)rc --internal check_dep_cc H4lProcessMinitree $@
+	$(SILENT)rc --internal rootcint $(ROOTSYS)/bin/rootcint $(RC_INCFLAGS) /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root/LinkDef.h /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.cxx /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.headers /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/lib H4lProcessMinitree
+	$(SILENT)$(RC_CXX) $(RC_DICTFLAGS) $(INCLUDES) -c /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.cxx -o $@
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.headers : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root/LinkDef.h | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj
+	$(SILENT)echo Making dependency for `basename $<`
+	$(SILENT)rc --internal make_dep $(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES) -D__CINT__ -D__MAKECINT__ -D__CLING__ -Wno-unknown-pragmas -- $@ $< 
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.d : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/Root/LinkDef.h | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj
+	$(SILENT)echo Making dependency for `basename $<`
+	$(SILENT)rc --internal make_dep $(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES)  -- $@ $< 
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/lib : 
+	$(SILENT)echo Making directory $@
+	$(SILENT)mkdir -p $@
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/bin/% : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/%.o | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/lib/libH4lProcessMinitree.so /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/bin
+	$(SILENT)echo Linking `basename $@`
+	$(SILENT)$(RC_LD) -o $@ $< $(RC_BINFLAGS)
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/%.o : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/util/%.cxx | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/combineMinitree.d
+	$(SILENT)echo Compiling `basename $@`
+	$(SILENT)rc --internal check_dep_cc H4lProcessMinitree $@
+	$(SILENT)$(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/%.d : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/H4lProcessMinitree/util/%.cxx | /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj
+	$(SILENT)echo Making dependency for `basename $<`
+	$(SILENT)rc --internal make_dep $(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES)  -- $@ $< 
+
+/afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/bin : 
+	$(SILENT)echo Making directory $@
+	$(SILENT)mkdir -p $@
+
+postcompile_H4lProcessMinitree :  /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/lib/libH4lProcessMinitree.so /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/bin/combineMinitree
+	$(SILENT)rc --internal postcompile_pkg H4lProcessMinitree
+
+
+dep_H4lProcessMinitree : /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/ProcessMinitree.d /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.d /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/combineMinitree.d /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.headers
+
+
+-include  /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/ProcessMinitree.d /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.d /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/combineMinitree.d /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/RootCoreBin/obj/x86_64-slc6-gcc49-opt/H4lProcessMinitree/obj/H4lProcessMinitreeCINT.headers

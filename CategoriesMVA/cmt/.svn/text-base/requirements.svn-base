@@ -1,0 +1,37 @@
+#################################################
+package CategoriesMVA
+
+author Giacomo Artoni <giacomo.artoni@cern.ch>
+
+use AtlasPolicy                AtlasPolicy-*    
+use AtlasROOT                  AtlasROOT-*                     External
+use xAODBase                   xAODBase-*                      Event/xAOD
+use AsgTools                   AsgTools-*                      Control/AthToolSupport
+use PathResolver               PathResolver-*                  Tools
+
+private
+use GaudiInterface             GaudiInterface-*                External
+use MadGraphME                 MadGraphME-*                    PhysicsAnalysis/HiggsPhys/HSG2/H4lMVDiscriminants
+
+apply_tag ROOTRooFitLibs
+apply_tag ROOTMathLibs
+
+macro_append rootBasicLibs "  -lTMVA  "  
+
+end_private
+
+
+apply_pattern installed_library
+library CategoriesMVA ../Root/*.cxx *.cxx components/*.cxx
+
+## install the xml files (in the weights directory)
+apply_pattern declare_xmls extras="-s=../weights *.xml"
+apply_pattern declare_joboptions files=*.py
+
+# private
+use AtlasReflex                AtlasReflex-*         External -no_auto_import
+apply_pattern lcgdict dict= CategoriesMVA selectionfile=selection.xml headerfiles="../CategoriesMVA/JetCatBDTWeightsDict.h"
+
+
+# end_private
+#################################################

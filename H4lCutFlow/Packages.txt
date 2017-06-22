@@ -1,0 +1,12 @@
+atlasoff/PhysicsAnalysis/HiggsPhys/HSG2/H4lMVDiscriminants/MadGraphME/tags/MadGraphME-00-00-13
+
+atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Tools/CategoriesMVA/trunk
+
+atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Tools/HZZUtils/trunk
+atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Tools/H4lBDTWeights/trunk
+
+atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Minitrees/H4l/H4lProcessMinitree/trunk
+atlasoff/PhysicsAnalysis/TruthWeightTools/trunk
+
+atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Tools/MCFM_MatrixElement/trunk
+atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Tools/MCFMGlue/trunk

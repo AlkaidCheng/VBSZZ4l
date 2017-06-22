@@ -1,0 +1,7 @@
+options_file = /afs/cern.ch/work/m/mmittal/private/MyAnalysisCode/MCFMGlue/cmt/options
+bindir = x86_64-slc6-gcc49-opt/MCFMGlue/lib/local/bin
+incdir = x86_64-slc6-gcc49-opt/MCFMGlue/lib/local/include
+libdir = x86_64-slc6-gcc49-opt/MCFMGlue/lib/local/lib
+binname = 
+incname = 
+libname = 

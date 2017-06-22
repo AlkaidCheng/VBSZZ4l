@@ -1,0 +1,9 @@
+<lcgdict>
+  <class name="IHiggsCrossSection" />
+  <class name="HiggsCrossSection" />
+  <class name="IH4lBrRatio" />
+  <class name="H4lBrRatio" />
+  <enum name="CentreOfMass::is" />
+  <enum name="ColumnXS::col" />
+  <enum name="ColumnBR::col" />
+</lcgdict>

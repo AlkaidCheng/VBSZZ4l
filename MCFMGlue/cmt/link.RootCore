@@ -1,0 +1,12 @@
+#!/bin/bash
+
+$ROOTCOREDIR/scripts/external_link.sh
+rc --internal ln $ROOTCOREBIN/../MCFMGlue/lib/libmcfm_6p7.so $ROOTCOREBIN/lib/$ROOTCORECONFIG/libmcfm_6p7.so
+rc --internal ln $ROOTCOREBIN/../MCFMGlue/lib/libov.so $ROOTCOREBIN/lib/$ROOTCORECONFIG/libov.so
+rc --internal ln $ROOTCOREBIN/../MCFMGlue/lib/libpv.so $ROOTCOREBIN/lib/$ROOTCORECONFIG/libpv.so
+rc --internal ln $ROOTCOREBIN/../MCFMGlue/lib/librecur.so $ROOTCOREBIN/lib/$ROOTCORECONFIG/librecur.so
+
+rc --internal ln $ROOTCOREBIN/../MCFMGlue/lib/libmcfm_8p0.so $ROOTCOREBIN/lib/$ROOTCORECONFIG/libmcfm_8p0.so
+rc --internal ln $ROOTCOREBIN/../MCFMGlue/lib/libov_8p0.so $ROOTCOREBIN/lib/$ROOTCORECONFIG/libov_8p0.so
+rc --internal ln $ROOTCOREBIN/../MCFMGlue/lib/libpv_8p0.so $ROOTCOREBIN/lib/$ROOTCORECONFIG/libpv_8p0.so
+rc --internal ln $ROOTCOREBIN/../MCFMGlue/lib/librecur_8p0.so $ROOTCOREBIN/lib/$ROOTCORECONFIG/librecur_8p0.so

@@ -1,0 +1,55 @@
+This tool is designed to retrieve the BDT score to separate the ZZ bkg and the Higgs Signal for the H4l analysis
+
+Instructions for using this tool are:
+
+1) Checkout the following package:
+	atlasoff/PhysicsAnalysis/HiggsPhys/HSG2/H4lMVDiscriminants/MadGraphME/tags/MadGraphME-00-00-11
+
+2) In your analysis code include the following intialization:
+
+	#include "H4lBDTWeights/H4lBDTWeights.h"
+
+
+	H4lBDTWeights* m_BDTtool = new H4lBDTWeights("H4lBDTWeights"); 
+	m_BDTtool->setProperty( "BDTtype", (int) H4lBDTWeights::final2012); // Currently only final2012 and final2011 are supported options
+	if(!m_BDTtool->initialize().isSuccess())
+	{
+		// Tool didn't intialize correctly
+	}
+
+
+3) Inside your event loop, you can retreive the BDT score using:
+
+	// Give all the inputs
+	BDTtool->setBDTInputs(const xAOD::IParticle* Z1LepPlus,
+			const xAOD::IParticle* Z1LepMinus,
+			const xAOD::IParticle* Z2LepPlus,
+			const xAOD::IParticle* Z2LepMinus,
+			float pt4l_truth_born, // truth level pT 4l - only needed for systematic variations 
+			bool isggH12 = false); // if the sample running over is a ggF sample - only need for systematic variations
+	
+	// Set output
+	float KD_discriminant = -999;
+	float BDT_discriminant = -999;
+	
+	// These will be removed from later releases..
+	float BDTGuass_discriminant = -999;
+	float ptSysupFac = -999;
+	float ptSysdownFac = -999;
+	
+	BDTtool->fillBDTOutputs(KD_discriminant, 
+			BDT_discriminant,
+			BDTGuass_discriminant,
+			ptSysupFac,
+			ptSysdownFac);
+
+
+
+Also since, this tool is now an ASG tool, it can be retrieved as a tool handle - this is great to ensure that you are only one instances of the tool anywhere in your code
+
+To retreive the tool handle:
+
+	#include "H4lBDTWeights/IH4lBDTWeights.h"
+	ToolHandle<IH4lBDTWeights> m_BDTtool = ToolHandle<IH4lBDTWeights>("H4lBDTWeights"); // all instruction before can be applied to this variable as well
+
+

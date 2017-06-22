@@ -1,0 +1,44 @@
+#################################################
+package HZZUtils
+
+author Fabien Tarrade <fabien.tarrade@cern.ch>
+
+use AtlasPolicy                AtlasPolicy-*     
+use AtlasROOT                  AtlasROOT-*              External
+use  AsgTools                  AsgTools-*              Control/AthToolSupport
+use xAODTruth                  xAODTruth-*              Event/xAOD 
+use xAODEventInfo	       xAODEventInfo-* 		Event/xAOD
+use xAODEgamma                 xAODEgamma-*             Event/xAOD
+use FourMomUtils	       FourMomUtils-* 		Event
+use MCTruthClassifier          MCTruthClassifier-*      PhysicsAnalysis 
+use PATInterfaces	       PATInterfaces-*		PhysicsAnalysis/AnalysisCommon
+use PathResolver	       PathResolver-* 		Tools
+
+private
+
+end_private
+
+apply_pattern installed_library
+library HZZUtils ../Root/*.cxx *.cxx
+
+## install the calib files (in the data/ directory)
+apply_pattern declare_calib files="-s=../data *"
+## also add in the XML dir, since thats currently where GRL tool looks
+apply_pattern declare_xmls extras="-s=../data *"
+
+private
+
+application testHZZUtils ../util/testHZZUtils.cxx
+macro_append testHZZUtils_dependencies HZZUtils
+
+
+use AtlasReflex                AtlasReflex-*         External -no_auto_import
+apply_pattern lcgdict dict=HZZUtils \
+              selectionfile=selection.xml \
+              headerfiles="../HZZUtils/HZZUtilsDict.h"
+
+apply_tag ROOTMathLibs
+end_private
+#################################################
+
+

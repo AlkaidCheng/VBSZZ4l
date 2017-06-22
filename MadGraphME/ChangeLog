@@ -1,0 +1,93 @@
+2016-06-05  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging MadGraphME-00-00-13
+	* MadGraphME/ComputeMGME.h (ComputeMGME): fixed compiler warning
+
+2016-04-14 Syed Haider Abidi <sabidi@cern.ch>
+	* changing output to ios::fixed
+	* CPPProcess_P0_Sigma_HC_NLO_X0_UFO_pp_Xjj_4l_HC_NLO_X0_UFO_ud_udepemepem
+	allow new instant of parameters for this sample to check for different
+	coupling parameters
+
+2015-11-16  Karolos Potamianos <karolos.potamianos@cern.ch>
+	* Adding param_card_PROC_SA_CPP_sm_hVBF_ZZ_4l.datO
+
+2015-10-30  Karolos Potamianos <karolos.potamianos@cern.ch>
+	* Enabling set4lepMass in UFO
+
+2015-10-16  Karolos Potamianos <karolos.potamianos@cern.ch>
+	* Adding code to set M(X0) from M4l
+	* Including Xjj MEs to test code
+
+2015-10-01  Karolos Potamianos <karolos.potamianos@cern.ch>
+	* BSM Xjj (2e2mu decays) from HC_NLO_X0_UFO
+
+2015-09-29  Karolos Potamianos <karolos.potamianos@cern.ch>
+	* Adding pp_Hjj_4l (and gq_Hjj_4l for cross-check)
+
+2015-08-05  Karolos Potamianos <karolos.potamianos@cern.ch>
+	* Adding some hVBF processes (decaying to 2m2e)
+	* Refactoring testMadGraphME with helper class and allowing for random inputs
+	* Moving from leptons to fermions (to include quarks) and using cms4l instead of cms
+
+2015-06-29  Karolos Potamianos <karolos.potamianos@cern.ch>
+	* Migrating code and scripts to Run-1
+	* Using MadGraph5_aMC@NLO
+
+2015-02-26 Syed Haider Abidi <sabidi@cern.ch>
+	* fixing the pedantic warning
+	* tagging MadGraphME-00-00-11
+
+2015-01-21 Syed Haider Abidi <sabidi@cern.ch>
+	* changes to fix compilation warnings
+	* tagging MadGraphME-00-00-10
+
+2013-12-03  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging MadGraphME-00-00-09
+	* cmt/requirements: adding -DMG_PRINT_PARS=0 to req file
+
+2013-12-03  Karolos Potamianos <karolos.potamianos@cern.ch>
+
+	* tagging MadGraphME-00-00-08
+	* Root/CPPProcess*cxx: Parameter printout depending on MG_PRINT_PARS
+	* cmt/Makefile.RootCore: Setting MG_PRINT_PARS to 0 (disables printout)
+	* util/testMadGraphME.cxx: Catching exception when invalid path to parameter card
+
+2013-11-21  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging MadGraphME-00-00-07
+	* cmt/requirements: fix for checkreq
+
+2013-11-20  Karolos Potamianos <karolos.potamianos@cern.ch>
+
+	* tagging MadGraphME-00-00-06
+	* Multiple files: Switching symlinks: Root <-> src ; MadGraphME <-> inc
+	* Multiple files:	data <-> Cards
+
+2013-11-20  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging MadGraphME-00-00-05
+	* cmt/requirements: added pattern to install Cards in InstallArea/XML
+
+2013-11-14  Karolos Potamianos <karolos.potamianos@cern.ch>
+
+	* tagging MadGraphME-00-00-04
+	* scripts/importMadGraphStandaloneCpp.sh: importer to store headers in inc/
+
+2013-11-14  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging MadGraphME-00-00-03
+	* cmt/requirements: added -I to include files directly in MadGraphME
+
+2013-11-14  Karolos Potamianos <karolos.potamianos@cern.ch>
+
+	* tagging MadGraphME-00-00-02
+	* cmt/Makefile.RootCore: adding INCLUDES variable
+	* MadGraphME: moved headers from Root/ to MadGraphME/
+
+2013-11-12  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging MadGraphME-00-00-01
+	* cmt/requirements: adding in requirements file for cmt build
+

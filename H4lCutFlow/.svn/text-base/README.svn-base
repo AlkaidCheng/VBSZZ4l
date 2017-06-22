@@ -1,0 +1,46 @@
+   
+Instruction to run the H4l cutflow code:
+
+1) In a folder, setup Analysis release by doing:
+    setupATLAS
+    rcSetup Base,2.4.29
+    (After the first time setting up the release, simply do "rcSetup")
+
+2) Checkout the HZZCutCommon and H4lCutflow package
+
+    If you want to use the trunk (This will change frequently, but will be up to date).
+    rc checkout_pkg atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Minitrees/Common/trunk/HZZCutCommon
+    rc checkout_pkg atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Minitrees/H4l/Primary/trunk/H4lCutFlow
+
+
+    If you want to use a tagged version of the code (Way more stable),
+    I would recommend using the latest tagged version of the code
+    rc checkout_pkg atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Minitrees/Common/tags/Common-XX-YY-ZZ/HZZCutCommon
+    rc checkout_pkg atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Minitrees/H4l/Primary/tags/Primary-XX-YY-ZZ/H4lCutFlow
+
+3) Checkout the packages used by the H4lCutflow code
+    rc checkout H4lCutFlow/Packages.txt
+
+4) Compile the code
+    rc find_packages
+    rc compile
+
+5) To run locally, simply do
+    runAnalysis
+    (Currently, the datasets and output file name are hardcode in the steering script. This will be updated soon)
+
+    In the main directory, the output minitree will be created and saved
+
+ 6) To submit on the Grid, first checkout the Grid submission code
+    rc checkout_pkg atlasoff/PhysicsAnalysis/HiggsPhys/Run2/HZZ/Minitrees/H4l/Primary/trunk/Grid
+
+    * Note that this Grid package must reside at the same level as the H4lCutFlow. In other words, 
+    it must be in the same directory that you run the code in *
+
+    // Currently, note that Grid for mc15 has not been checked
+    setup the local panda client and the voms-proxy
+
+    cd Grid
+    and in prunMyAnalysis.py, you can pick and choose what type of sample you want to run. 
+    The list of samples is declared as vector inside another .py file and include in this one
+    This is to aid in organization. 

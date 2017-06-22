@@ -1,0 +1,25 @@
+2017-05-28  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* CMakeLists.txt: initial version - not yet functional
+
+2017-05-27 <goblirsc(at)cern(dot)ch> 
+    * Update average MG data files for dynamic scale choice
+
+
+2017-05-04 <goblirsc(at)cern(dot)ch> 
+    * Implementation of m4l-decorrelated MELA
+
+2017-04-14  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging MCFM_MatrixElement-00-00-01 for prod_v12
+
+2017-04-08  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* Root/MatrixElementProvider.cxx (HSG2_MCFM): fixed pdg +/- for el/mu
+	added DEBUG statements to help find out where the problems are coming from.
+
+2017-04-07 <goblirsc(at)cern(dot)ch> 
+    * Added an xAOD-style interface
+    * Added dependencies on xAODBase and xAODTruth
+2017-04-06 <goblirsc(at)cern(dot)ch> 
+    * Migrated to new svn location

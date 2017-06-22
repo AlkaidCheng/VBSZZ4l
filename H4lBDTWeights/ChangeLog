@@ -1,0 +1,86 @@
+2017-06-20 Max Goblirsch <goblirsc@cern.ch>
+	* Added one additional signal ME
+
+2017-05-28  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* CMakeLists.txt: adding in first version
+
+2017-04-20 Syed Haider Abidi <sabidi@cern.ch>
+	* training with NNLOPS and Sherpa
+
+2017-04-05 Syed Haider Abidi <sabidi@cern.ch>
+    * tagging H4lBDTWeights-00-00-09
+
+2017-02-22 Syed Haider Abidi <sabidi@cern.ch>
+	* update training file with prod_v10
+
+2017-02-12 Syed Haider Abidi <sabidi@cern.ch>
+	* support for truth particles
+
+2016-07-20 Syed Haiader Abidi <sabidi@cern.ch>
+	* new training for BDT
+	* tagging 00-00-07
+
+2015-11-19 Syed Haider Abid <sabidi@cern.ch>
+	* Run 2 weight from Giada
+	* Tagging 00-00-02
+
+
+2015-05-24 Syed Haider Abidi <sabidi@cern.ch>
+	* Adding README
+	* Tagging H4lBDTWeights-00-00-01
+
+2015-05-18 Syed Haider Abidi <sabidi@cern.ch>
+	* move to an ASG tool
+	* interface update
+	* Athena compilation - help from RD
+	* removal of extra training files
+	* svn area change to the new tool location
+	* interface for getting just the signal ME andKD
+
+2015-03-01 Syed Haider Abidi <sabidi@cern.ch>
+	* Path resolver
+
+2015-02-26 Syed Haider Abidi <sabidi@cern.ch>
+	* fixing the pedantic warning
+	* tagging H4lBDTweight-00-01-01
+
+2015-01-26 Syed Haider Abidi <sabidi@cern.ch>
+	* Changing of interface to more xAOD-like
+	* Tagging H4lBDTweights-00-01-00
+
+2015-01-21 Syed Haider Abidi <sabidi@cern.ch>
+	* Adding functions for xAOD Particles (help from Justas and Zongchang)
+	* Change for selecting the current type of BDT
+
+2014-04-25 Syed Haider Abidi <sabidi@cern.ch>
+	* updating 2011 weights with new tags
+	* tagging H4lBDTweights-00-00-08
+
+2014-04-06 Syed Haider Abidi <sabidi@cern.ch>
+	* adding 2011 weights
+	* modified the constructor to choose between 2012 and 2011
+
+2013-11-21  Fabien Tarrade  <tarrade @cern.ch>
+	* fixing RootCore path, you need MadGraphME-00-00-06
+	*  tagging H4lBDTWeights-00-00-05
+
+2013-11-19  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* tagging H4lBDTWeights-00-00-04
+	* H4lBDTWeights/H4lBDTWeights.h (H): small changes
+
+2013-11-19  Fabien Tarrade  <tarrade @cern.ch>
+	* to compile with RootCore
+	* tagging BDTWeights-00-00-03
+
+2013-11-18  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* tagging H4lBDTWeights-00-00-02
+	* H4lBDTWeights/H4lBDTWeights.h (H): changed name to
+	H4lBDTWeights, and changes to follow atlas coding standards
+
+2013-11-16 Syed Haider Abidi <sabidi@cern.ch>
+	* Protection against negative pt4l_truth_born
+	* tagging BDTWeights-00-00-01
+
+2013-11-14 Syed Haider Abidi <sabidi@cern.ch>
+	* Initial import - modified the code by Roberto and Eleni to be RootCore
+

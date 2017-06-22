@@ -1,0 +1,36 @@
+package H4lBDTWeights 
+
+author Syed Haider Abidi <syed.haider.abidi@cern.ch>
+
+use AtlasPolicy                AtlasPolicy-*    
+use AtlasROOT                  AtlasROOT-*                     External
+use xAODBase                   xAODBase-*                      Event/xAOD
+use AsgTools                   AsgTools-*                      Control/AthToolSupport
+use PathResolver               PathResolver-*                  Tools
+
+
+private
+use GaudiInterface             GaudiInterface-*                External
+use MadGraphME                 MadGraphME-*                    PhysicsAnalysis/HiggsPhys/HSG2/H4lMVDiscriminants
+
+apply_tag ROOTRooFitLibs
+apply_tag ROOTMathLibs
+
+macro_append rootBasicLibs "  -lTMVA  "  
+
+end_private
+
+apply_pattern installed_library
+library H4lBDTWeights ../Root/*.cxx *.cxx components/*.cxx
+apply_pattern component_library
+
+
+# Install the jobOptions:
+apply_pattern declare_joboptions files=*.py
+
+
+#private
+use AtlasReflex                AtlasReflex-*         External -no_auto_import
+apply_pattern lcgdict dict=H4lBDTWeights selectionfile=selection.xml headerfiles="../H4lBDTWeights/H4lBDTWeightsDict.h"
+
+# end_private

@@ -1,0 +1,10 @@
+PACKAGE          = HZZUtils
+PACKAGE_PRELOAD  = MathMore
+PACKAGE_CXXFLAGS =
+PACKAGE_LDFLAGS  = 
+PACKAGE_BINFLAGS = 
+PACKAGE_DEP      = AsgTools xAODEgamma PathResolver PATInterfaces xAODEventInfo xAODTruth xAODJet FourMomUtils
+PACKAGE_TRYDEP	 = MCTruthClassifier
+PACKAGE_PEDANTIC = 1
+PACKAGE_REFLEX = 1
+include $(ROOTCOREDIR)/Makefile-common

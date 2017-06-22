@@ -1,0 +1,12 @@
+{ decls }
+namespace xAOD {  }
+
+[ libTruthWeightTools_Reflex.so ]
+# List of selected classes
+class IIndexRetriever
+class IndexRetriever
+class xAOD::ITruthWeightTool
+class xAOD::TruthWeightTool
+header TruthWeightTools/IndexRetriever.h
+header TruthWeightTools/ITruthWeightTool.h
+header TruthWeightTools/TruthWeightTool.h

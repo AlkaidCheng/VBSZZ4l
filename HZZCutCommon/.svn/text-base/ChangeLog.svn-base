@@ -1,0 +1,138 @@
+2015-10-19 Syed Haider Abidi <sabidi@cern.ch>
+    * AFII support
+
+2015-10-11 Syed Haider Abidi <sabidi@cern.ch>
+    * run number update
+
+2015-10-05 Syed Haider Abidi <sabidi@cern.ch>
+    * MET error checks
+    * Support of shared_ptr 
+
+2015-09-15 Syed Haider Abidi <sabidi@cern.ch>
+    * MET Calculations
+    * Use of TStore for memory management
+
+2015-09-08 Syed Haider Abidi <sabidi@cern.ch>
+    * addition of finalize method to aid in 3l output
+    * debug print for ParticleMulti
+
+2015-08-30 Syed Haider Abidi <sabidi@cern.ch>
+    * update for truth tau matching - need for tau smearing
+    * update of ilumicalc to 25 ns
+    * taus commented out - some issue with tau smearing info probably not in DxAOD
+
+2015-08-30 Syed Haider Abidi <sabidi@cern.ch>
+    * Debug for bkg
+    * Support for taus
+
+2015-08-23 Syed Haider Abidi <sabidi@cern.ch>
+    * ParticleMulti addition for 3l cutflow
+
+2015-08-17 Syed Haider Abidi <sabidi@cern.ch>
+    * JER tool added
+
+2015-08-13 Syed Haider Abidi <sabidi@cern.ch>
+    * Systematic tool setup update
+    * Reco matching truth update
+    * return_checks for tool setup rather than ignore
+
+2015-08-09 Syed Haider Abidi <sabidi@cern.ch>
+    * adding of option in outputtree to check if variables exits and
+        not exiting if the variable does not exist in ttree
+    * adding the ability to run on a small subset of events
+    * clean up of error messages
+
+2015-08-07 Syed Haider Abidi <sabidi@cern.ch>
+    * code cleanup
+
+2015-08-05 Syed Haider Abidi <sabidi@cern.ch>
+    * fix to jet smearing - wasnot applying systematic variation tool
+
+2015-07-26 Syed Haider Abidi <sabidi@cern.ch>
+    * update of exit statements
+    * fix to Kernel name
+	* fix to how total number of events are calculated in the DxAOD
+	* pileup tool application to data to get corrected mu
+
+2015-07-20 Syed Haider Abidi <sabidi@cern.ch>
+    * removal of efficiency calculations to allow implementation of Norm systematics
+    this is now moved to the derived class
+
+2015-07-17 Syed Haider Abidi <sabidi@cern.ch>
+    * new pileup profile
+
+2015-07-11 Syed Haider Abidi <sabidi@cern.ch>
+    * update to the systematic looping code. Now user is able to pick what systematic to run in a job
+    * Addition of jet systematic
+    * new lumicalc
+
+2015-07-10 Syed Haider Abidi <sabidi@cern.ch>
+    * fix to luminosity calculation - was dividing by a extra factor of thousand
+
+2015-07-07 Syed Haider Abidi <sabidi@cern.ch>
+    * tagging Common-00-00-03 - for acceptance challenge
+
+2015-06-21 Syed Haider Abidid <sabidi@cern.ch>
+    * Fix for FSR
+
+2015-06-21 Syed Haider Abidi <sabidi@cern.ch>
+    * Addition of Lumi
+
+2015-06-14 Syed Haider Abidi <sabidi@cern.ch>
+    * First setup for MC15
+    * New tool init class to ease initialization of cross-dependant tools
+    * EventContainer and tool init class setup relegated to derived classes
+
+2015-06-11 Syed Haider Abidi <sabidi@cern.ch>
+	* tagging Common-00-00-02 
+	* this is the last code to be checked in for the DC14 release
+
+2015-06-01 Syed haider Abidi <sabidi@cern.ch>
+	* removal of random number seed override for Egamma tools
+
+2015-05-18 Syed Haider Abidi <sabidi@cern.ch>
+	* update to electron scale factors
+
+2015-05-19 Syed Haider Abidi <sabidi@cen.ch>
+	* update to jet smearing
+	* emu support in Dilepton class
+
+2015-04-05 Syed Haider Abidi <sabidi@cern.ch>
+    * Truth print output
+    * Extension of Enums for truth quad type
+    * support for truth in ParticleVar,Dilep & Quadlep
+    * updates to jet smearing
+    * debug statement for ParticleVar
+    * addition of var removal from minitree
+
+2015-03-27 Syed Haider Abidi <sabidi@cern.ch>
+    * Memory corruption fix when running systematics
+    * weights
+    * addition of getting the number of events from DxAOD
+
+2015-03-25 Syed Haider Abidi <sabidi@cern.ch>
+    * const correctness for particleVar accessors
+    * debug statement printing in Egamma Smearing
+
+2015-03-20 Syed Haider Abidi <sabidi@cern.ch>
+	* deletion for outputtree removed from Event Container
+	* change of TEvent access mode for trigger implementation
+    * interface in particleDilepton to check if FSR exist
+
+2015-03-10 Syed Haider Abidi <sabidi@cern.ch>
+	* hack for muon charge - need to remove 
+	* update for 2.1.28
+
+2015-03-09 Syed Haider Abidi <sabidi@cern.ch>
+	* removal  of configurable systematic loop
+	* interface update to run on Base,2.1.28
+	* protection against double delete for shallow copy
+	in case of event being rejected before smearing is 
+	performed
+
+2015-03-01 Syed Haider Abidi <sabidi@cern.ch>
+	* changes for categories code
+
+2015-02-25 Syed Haider Abidi <sabidi@cern.ch>
+	* Initial import
+

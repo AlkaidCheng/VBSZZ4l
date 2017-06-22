@@ -1,0 +1,34 @@
+# this makefile also gets parsed by shell scripts
+# therefore it does not support full make syntax and features
+# edit with care
+
+# for full documentation check:
+# https://twiki.cern.ch/twiki/bin/viewauth/Atlas/RootCore#Package_Makefile
+
+PACKAGE          = MadGraphME
+PACKAGE_PRELOAD  = 
+PACKAGE_CXXFLAGS = -Wno-unused-variable -DMG_PRINT_PARS=0
+PACKAGE_OBJFLAGS = 
+PACKAGE_LDFLAGS  = 
+PACKAGE_BINFLAGS = 
+PACKAGE_LIBFLAGS = 
+PACKAGE_DEP      = 
+PACKAGE_TRYDEP   = 
+PACKAGE_CLEAN    = 
+PACKAGE_NOGRID   = 
+PACKAGE_PEDANTIC = 1
+PACKAGE_NOOPT    = 0
+PACKAGE_NOCC     = 0
+PACKAGE_REFLEX   = 0
+
+
+# The need for the _local_ include isn't mentioned in the documentation, but
+# it is nonetheless needed
+
+INCLUDES += -I../MadGraphME
+
+# Unfortunately, the targets of Makefile-common are generated so that it uses 
+# the options when these targers are generated. Therefore, the include has to
+# occur _last_ in the chain.
+
+include $(ROOTCOREDIR)/Makefile-common

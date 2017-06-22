@@ -1,0 +1,9 @@
+2017-05-28  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* CMakeLists.txt: initial version - not yet functional
+
+2017-04-14  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging MCFMGlue-00-00-01
+	* Max and Lailin created a glue package to hold the libraries for MCFM
+

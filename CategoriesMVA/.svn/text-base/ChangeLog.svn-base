@@ -1,0 +1,97 @@
+2017-05-28  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* CMakeLists.txt: changes to work with rel 21
+
+2017-04-05 Syed Haider Abidi <sabidi@cern.ch>
+	* tagging CategoriesMVA-00-00-09 
+
+2017-02-22 Syed Haider Abidi <sabidi@cern.ch>
+	* update training file with prod_v10
+
+2016-11-24 Syed Haider Abidi <sabidi@cern.ch>
+	* bug fix for 2 jet moriond bdt
+
+2016-11-17 Syed Haider Abidi <sabidi@cern.ch>
+	* updated files for 1 jet with corrected dRHj fix
+
+2016-11-13 Syed Haider Abidi <sabidi@cern.ch>
+	* new BDT for VBF and 1 jet for Moriond 
+
+2016-07-20  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* tagging CategoriesMVA-00-00-06
+
+2016-07-20 Syed Haider Abidi <sabidi@cern.ch>
+	* new VBF and one jet bdt training
+
+2016-07-19 Syed Haider Abidi <sabidi@cern.ch>
+	* restructuring the data folder
+	* addition of VH_had BDT files trained with PRod_v04 for ICHEP
+
+2016-06-03  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* tagging CategoriesMVA-00-00-05
+
+2016-06-01  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* tagging CategoriesMVA-00-00-04
+
+2016-05-30  RD Schaffer  <R.D.Schaffer@cern.ch>
+	* CategoriesMVA/ICategoriesMVA.h (IAsgTool): moved to getVBF_ME. Can get ME for any version
+	of the tool, and only one implementation of the ME.
+
+2016-05-29 Syed Haider Abidi <sabidi@cern.ch>
+	* function to calculate the ME for 1 and 2 jet case
+
+2016-05-21 Syed Haider Abidi <sabidi@cern.ch>
+	* Nan's BDT for 1 jet cat
+	* checking in of data files
+
+2016-05-20 Syed Haider Abidi <sabidi@cern.ch>
+	* updated training for 2 jet
+	* addition of new VH bdt
+
+2016-05-10  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging CategoriesMVA-00-00-02 (tagged in new area)
+	(applyMVA): fix to use quark pdf.
+	* tagging CategoriesMVA-00-00-01 (tagged in new area)
+	* Root/CategoriesMVA.cxx (applyMVA): debugged oneJet, twoJet and run 1 VBF discrimiants
+
+2016-05-07  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* moving to package under PhysicsAnalysis/HiggsPhys/Run2/HZZ/Tools
+
+2016-04-11 Syed Haider Abidi <sabidi@cern.ch>
+  * adding BDT tool for 1 jet category
+
+2015-07-02  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+  * tagging CategoriesMVA-00-01-01
+
+
+2015-03-01 Syed Haider Abidi <sabidi@cern.ch>
+  * Path resolver
+
+2015-02-26 Syed Haider Abidi <sabidi@cern.ch>
+  * xAOD like interface
+  * adding data folder
+  * tagging CategoriesMVA-00-01-00
+
+2014-04-14  Giacomo Artoni <Giacomo.Artoni@cern.ch>
+
+  * Re-trained both BDTs for 7TeV data
+
+2014-02-10  Giacomo Artoni <Giacomo.Artoni@cern.ch>
+
+  * tagging CategoriesMVA-00-00-05
+  * Updated VBF BDT
+
+2014-01-10  Giacomo Artoni <Giacomo.Artoni@cern.ch>
+
+  * tagging CategoriesMVA-00-00-04
+  * Updated both BDTs with latest jet calibration
+  * Moved variable naming to minitrees
+
+2013-09-06  RD Schaffer  <R.D.Schaffer@cern.ch>
+
+	* tagging CategoriesMVA-00-00-02
+	* cmt/requirements: added fixes for cmt
+
